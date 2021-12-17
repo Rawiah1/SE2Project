@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "eslint index.js"
+    "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info"
   },
   "keywords": [],
   "author": "",
