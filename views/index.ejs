@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Food classifier</title>
+</head>
+
+<body>
+<style type="text/css">	
+div.header {
+	border: 1px solid red;
+	border-right-width: 895px;
+	border-right-color: white;
+}
+img{
+border:1px solid green;
+margin: 1000;
+float: right;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+input[type="text"] {
+	height: 100px;
+	width: 100;
+}
+button {
+	height: 30px;
+	width: 50px;
+	margin: 20px;
+}
+</style>
+<div class="header">
+<img src="https://i.pinimg.com/originals/9d/b1/c0/9db1c0baaf8977907f101d950ae30413.png" height="80"/>
+<h1>Food classifier </h1>
+</div>
+
+<div class="box" id="heading">
+		<p>Enter your text to be classified</p>
+</div>
+<form action="/" method="post">
+	<input type="text" name="statement"><br>
+	<tr>
+		<td><button type="submit" name="button">submit</button></td>
+		<td><button type="reset" name="button">clear</button></td>
+	</tr>
+</table>
+</form>
+<table>
+	<thead>
+		<th style="width: 250px;">Sentece</th>
+		<th>Labels</th>
+	</thead>
+	<% for (i =0; i< listOfTextItems.length; i++) { %>
+	<tr>
+		
+		<td>
+			<%= listOfTextItems[i]%>
+		</td>
+		<td><%= listOfLabelsItems[i]%></td>
+	</tr>
+	<% } %>
+</table>
+</body>
+
+</html> 

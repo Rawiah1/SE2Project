@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "eslint index.js"
-    "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
@@ -13,14 +12,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "ejs": "^3.1.6",
-    "express": "^4.17.1",
-    "fasttext": "^1.0.0",
-    "npx": "^10.2.2",
-    "path": "^0.12.7"
-  },
-  "devDependencies": {
-    "coveralls": "^3.1.1",
-    "eslint": "^8.4.1",
-    "jest": "^27.4.5"
+    "express": "^4.17.2",
+    "node-fasttext": "^1.0.0-alpha.1"
   }
 }
